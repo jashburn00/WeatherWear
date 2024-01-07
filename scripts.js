@@ -1,4 +1,15 @@
-const API_KEY = env.API_KEY_OPENWEATHER;
+try{
+    const API_KEY = env.API_KEY_OPENWEATHER;
+    console.log(API_KEY);
+} catch{}
+try{
+    const API_KEY = API_KEY_OPENWEATHER;
+}catch{}
+try{
+    const API_KEY = env.API_KEY_OPENWEATHER;
+    console.log(API_KEY);
+}catch{}
+
 var headwearUpdate = "";
 var upperBodyUpdate = "";
 var lowerBodyUpdate = "";
