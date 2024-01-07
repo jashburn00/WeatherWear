@@ -1,0 +1,171 @@
+* {
+    /* universal reset to counteract Chrome's gobblegook */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(214, 213, 213), white);
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 4px;
+    padding: 4px;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin: 4px;
+    padding: 4px;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 4px;
+    padding: 4px;
+}
+
+label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+input {
+    background-color: white;
+    margin: 5px;
+    padding: 4px;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
+
+.imgCenter {
+    text-align: center;
+    background-color: none;
+}
+
+#subbtn {
+    background-image: linear-gradient(to bottom, white, lightblue);
+    border-radius: 5px;
+    padding: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#subbtn:hover {
+    background-image: linear-gradient(to bottom, cyan, pink);
+    
+}
+
+#subbtn:focus {
+    background-image: linear-gradient(to bottom, cyan, pink);
+    
+}
+
+.content {
+    margin: 2px;
+    padding: 2px;
+    background-color: none;
+    margin-right: 12px;
+    align-self: center; 
+}
+
+.navbtn {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: 3px;
+    margin-right: 12px;
+    background-image: linear-gradient(to bottom, white, lightblue);
+    border: 1px solid black;
+    float: left;
+}
+
+.navbtn:hover {
+    background-image: linear-gradient(to bottom, cyan, pink);
+}
+
+.navbtn:focus{
+    background-image: linear-gradient(to bottom, cyan, pink);
+}
+
+.topnav {
+    margin: 0px;
+    padding: 6px;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, lightblue, white);
+    display: inline-block;
+}
+
+.row {
+    background-color: lightgray;
+    margin: 4px;
+    padding: 2px;
+    border: 2px solid lightblue;
+    display: inline-block;
+    width: 100%;
+}
+
+.leftCol {
+    background-color: lightgray;
+    margin: 2px;
+    padding: 2px;
+    border: none;
+    float: left;
+    width: 48%;
+    text-align: center;
+}
+
+.rightCol {
+    background-color: none;
+    margin: 2px;
+    padding: 2px;
+    border: none;
+    float: right;
+    width: 48%;
+    justify-content: center;
+    text-align: center;
+}
+
+.centerVertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    margin-top: 20px;
+}

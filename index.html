@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WeatherWear</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" type="text/javascript"></script>
+    <div class="topnav">
+        <button class="navbtn" style=" background-color: linear-gradient(blue, white);" onclick="window.location.href='https://github.com/jashburn00/';">Check out my GitHub!</button>
+        <button class="navbtn" style=" background-color: linear-gradient(blue, white);" onclick="window.location.href='devprocess.html';">How did I make this?</button>
+    </div> <!--topnav-->
+</head>
+
+<body>
+    <h1>WeatherWear</h1>
+    <main>
+        <div class="content" id="maincontentarea">
+
+            <div class="row"><!--input-->
+                <div class="leftCol" id="brief">
+                    <h2>Simply enter a ZIP code and get tips on what to wear!</h2> 
+                    <p>Don't worry! I don't use trackers, data collection, or any of that funky gunk.</p>
+                </div>
+                <div class="rightCol">
+                    <div class="centerVertical">
+                        <label for="codeInput">United States ZIP code:</label>
+                        <input type="text" id="codeInput" name="codeInput">
+                        <button id="subbtn" onclick="receive()">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden" id="hideDiv">
+                <div class="row" id="hiddenStats">
+                    <div class="leftCol" id="hiddentitle">
+                        <h2>3-hour forecast for your area:</h2>
+                    </div>
+                    <div class="rightCol">
+                        <ul>
+                            <li id="temperatureli">Temperature</li>
+                            <li id="conditionli">Conditions</li>
+                            <li id="humidityli">Humidity</li>
+                            <li id="windli">Wind Speed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row"><!--headwear-->
+                <div class="leftCol">
+                    <div class="imgCenter" id="headwarePhotoContainer">
+                        <img src="/images/questionmark.png" alt="An image of a question mark." id="headwareImg">
+                    </div>
+                </div>
+                <div class="rightCol">
+                    <h2 id="headweartitle">Headwear</h2>
+                    <p id="headwearText">Once you submit a location, headwear and/or accesories will be recommended and explained here.</p>
+                </div>
+            </div>
+
+            <div class="row"><!--upper body-->
+                <div class="leftCol">
+                    <div class="imgCenter" id="upperBodyPhotoContainer">
+                        <img src="/images/questionmark.png" alt="An image of a question mark." id="upperBodyImg">
+                    </div>
+                </div>
+                <div class="rightCol">
+                    <h2 id="headweartitle">Shirts/Jackets</h2>
+                    <p id="upperBodyText">Once you submit a location, upper body clothing will be recommended and explained here.</p>
+                </div>
+            </div>
+
+            <div class="row"><!--lower body-->
+                <div class="leftCol">
+                    <div class="imgCenter" id="pantsPhotoContainer">
+                        <img src="/images/questionmark.png" alt="An image of a question mark." id="lowerBodyImg">
+                    </div>
+                </div>
+                <div class="rightCol">
+                    <h2 id="headweartitle">Pants</h2>
+                    <p id="lowerBodyText">Once you submit a location, lower body clothing will be recommended and explained here.</p>
+                </div>
+            </div>
+
+            <div class="row"><!--shoes-->
+                <div class="leftCol">
+                    <div class="imgCenter" id="shoesPhotoContainer">
+                        <img src="/images/questionmark.png" alt="An image of a question mark." id="shoesImg">
+                    </div>
+                </div>
+                <div class="rightCol">
+                    <h2 id="shoestitle">Shoes</h2>
+                    <p id="shoesText">Once you submit a location, footwear will be recommended and explained here.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+<footer>
+    <p>Created by Jack Ashburn in January 2024 for web development practice. I do not claim copyright ownership of any icons or images used, and will not be profiting from this website.</p>
+</footer>
+
+</html>
