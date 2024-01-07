@@ -1,4 +1,4 @@
-const API_KEY = process.env.API_KEY_OPENWEATHER;
+const API_KEY = env.API_KEY_OPENWEATHER;
 var headwearUpdate = "";
 var upperBodyUpdate = "";
 var lowerBodyUpdate = "";
