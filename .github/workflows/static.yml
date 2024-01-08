@@ -8,7 +8,8 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
+env:
+      API_KEY_OPENWEATHER: ${{ secrets.API_KEY_OPENWEATHER }}
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -20,8 +21,6 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-env:
-    API_KEY_OPENWEATHER: ${{ secrets.API_KEY_OPENWEATHER }}
 jobs:
   # Single deploy job since we're just deploying
   deploy:
@@ -29,6 +28,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    env:
+      API_KEY_OPENWEATHER: ${{ secrets.API_KEY_OPENWEATHER }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -42,3 +43,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        env:
+          API_KEY_OPENWEATHER: ${{ secrets.API_KEY_OPENWEATHER }}
