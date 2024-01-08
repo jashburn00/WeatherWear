@@ -85,7 +85,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("headwarePhotoContainer");
             divPlaceholder.removeChild(document.getElementById("headwareImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/beanieTransparent.png';
+            imgElt.src = 'images/beanieTransparent.png';
             imgElt.alt = 'An image of a beanie';
             divPlaceholder.appendChild(imgElt);
             break;
@@ -93,7 +93,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("headwarePhotoContainer");
             divPlaceholder.removeChild(document.getElementById("headwareImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/ballcapTransparent.png';
+            imgElt.src = 'images/ballcapTransparent.png';
             imgElt.alt = 'An image of a hat';
             divPlaceholder.appendChild(imgElt);
             break;
@@ -101,7 +101,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("headwarePhotoContainer");
             divPlaceholder.removeChild(document.getElementById("headwareImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/sunglassesTransparent.png';
+            imgElt.src = 'images/sunglassesTransparent.png';
             imgElt.alt = 'An image of sunglasses';
             divPlaceholder.appendChild(imgElt);
             break;
@@ -109,7 +109,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("headwarePhotoContainer");
             divPlaceholder.removeChild(document.getElementById("headwareImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/simleyface.png';
+            imgElt.src = 'images/simleyface.png';
             imgElt.alt = 'An image of a smiley face';
             divPlaceholder.appendChild(imgElt);
             headwearUpdate = headwearUpdate + "Hats, beanies, and sunglasses are evenly weighted. Pick your favorite! ";
@@ -121,7 +121,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("upperBodyPhotoContainer");
             divPlaceholder.removeChild(document.getElementById("upperBodyImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/tshirtTransparent.png';
+            imgElt.src = 'images/tshirtTransparent.png';
             imgElt.alt = 'An image of a T-shirt';
             divPlaceholder.appendChild(imgElt);
             break;
@@ -129,7 +129,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("upperBodyPhotoContainer");
             divPlaceholder.removeChild(document.getElementById("upperBodyImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/jacketTransparent.png';
+            imgElt.src = 'images/jacketTransparent.png';
             imgElt.alt = 'An image of a jacket';
             divPlaceholder.appendChild(imgElt);
             break;
@@ -137,7 +137,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("upperBodyPhotoContainer");
             divPlaceholder.removeChild(document.getElementById("upperBodyImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/thickjacketTransparent.png';
+            imgElt.src = 'images/thickjacketTransparent.png';
             imgElt.alt = 'An image of a thicker jacket';
             divPlaceholder.appendChild(imgElt);
             break;
@@ -145,7 +145,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("upperBodyPhotoContainer");
             divPlaceholder.removeChild(document.getElementById("upperBodyImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/jacketTransparent.png';
+            imgElt.src = 'images/jacketTransparent.png';
             imgElt.alt = 'An image of a jacket';
             divPlaceholder.appendChild(imgElt);
             upperBodyUpdate = upperBodyUpdate + "Upper body wear weights are tied. Pick your favorite! ";
@@ -157,7 +157,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("pantsPhotoContainer");
             divPlaceholder.removeChild(document.getElementById("lowerBodyImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/shortsTransparent.png';
+            imgElt.src = 'images/shortsTransparent.png';
             imgElt.alt = 'An image of shorts';
             divPlaceholder.appendChild(imgElt);
             break;
@@ -165,7 +165,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("pantsPhotoContainer");
             divPlaceholder.removeChild(document.getElementById("lowerBodyImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/pantsTransparent.png';
+            imgElt.src = 'images/pantsTransparent.png';
             imgElt.alt = 'An image of pants';
             divPlaceholder.appendChild(imgElt);
             break;
@@ -173,7 +173,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("pantsPhotoContainer");
             divPlaceholder.removeChild(document.getElementById("lowerBodyImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/pantsTransparent.png';
+            imgElt.src = 'images/pantsTransparent.png';
             imgElt.alt = 'An image of pants';
             divPlaceholder.appendChild(imgElt);
             lowerBodyUpdate = lowerBodyUpdate + "Pants and shorts were closely weighted. Pick your favorite! ";
@@ -186,7 +186,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("shoesPhotoContainer");
             divPlaceholder.removeChild(document.getElementById("shoesImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/shoesTransparent.png';
+            imgElt.src = 'images/shoesTransparent.png';
             imgElt.alt = 'An image of a shoe';
             divPlaceholder.appendChild(imgElt);
             break;
@@ -194,7 +194,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("shoesPhotoContainer");
             divPlaceholder.removeChild(document.getElementById("shoesImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/sandalsTransparent.png';
+            imgElt.src = 'images/sandalsTransparent.png';
             imgElt.alt = 'An image of sandals';
             divPlaceholder.appendChild(imgElt);
             break;
@@ -202,7 +202,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("shoesPhotoContainer");
             divPlaceholder.removeChild(document.getElementById("shoesImg"));
             imgElt = document.createElement('img');
-            imgElt.src = '/images/shoesTransparent.png';
+            imgElt.src = 'images/shoesTransparent.png';
             imgElt.alt = 'An image of a shoe';
             divPlaceholder.appendChild(imgElt);
             lowerBodyUpdate = lowerBodyUpdate + "Shoes and sandals were closely weighted. Pick your favorite! ";
