@@ -1,14 +1,14 @@
-try{
-    const API_KEY = env.API_KEY_OPENWEATHER;
-    console.log(API_KEY);
-} catch{}
-try{
-    const API_KEY = API_KEY_OPENWEATHER;
-}catch{}
-try{
-    const API_KEY = env.API_KEY_OPENWEATHER;
-    console.log(API_KEY);
-}catch{}
+const API_KEY = "8abcdb792c6787529d9fd69825dd5c7a";
+/* 
+this key is for a free, limited use account which has 
+no personal or payment information attached to it.
+
+I understand leaving sensitive data such as an API
+key in client side code is bad.
+
+However, github pages is free and does not
+provide an easy workaround. So here it is.
+*/
 
 var headwearUpdate = "";
 var upperBodyUpdate = "";
@@ -37,7 +37,6 @@ async function action(data){
     weatherMain = data.weather[0].description;
     windSpeed = MStoMPH(data.wind.speed);
     var x = data.weather[0].id;
-    console.log("x is: ",x);
     switch(true){ //init weather variable
         case x < 300:
             weather = "thunderstorm";
@@ -279,7 +278,6 @@ function assignWind(){
 }
 
 function assignTemp(){
-    console.log("temp is "+temp);
     if(temp < 40){
         upperBodyUpdate = upperBodyUpdate + "It's going to be quite cold, so a heavier jacket is a good idea. ";
         weights.heavyJacket+=2;
@@ -339,7 +337,6 @@ function assignTemp(){
 }
 
 function assignWeather(){
-    console.log("Weather is: ",weather);
     switch (weather){
         case "clear":
             headwearUpdate = headwearUpdate+"It's looking like "+weatherMain+". You might want to bring some sunglasses. ";
@@ -387,30 +384,23 @@ function getLL(input){
         return 0;
     }
 
-    const apiUrl = "http://api.openweathermap.org/geo/1.0/zip?zip="+input+",US&appid=8abcdb792c6787529d9fd69825dd5c7a";
-    /*return metadata:
+    const apiUrl = "http://api.openweathermap.org/geo/1.0/zip?zip="+input+",US&appid="+API_KEY;
+    {/*return example:
     {
         "zip": "90210",
         "name": "Beverly Hills",
         "lat": 34.0901,
         "lon": -118.4065,
         "country": "US"
-    }*/
-    
-    console.log(apiUrl);
+    }*/}
 
     return fetch(apiUrl)
     .then(response => response.json())
     .then(data => {
-        console.log("Geocoding call response: ", data);
-
+        //console.log("Geocoding call response: ", data);
         if ('lat' in data && 'lon' in data) {
-            console.log("Latitudinal and longitudinal data found in response");
             const latitude = data.lat;
             const longitude = data.lon;
-
-            console.log('Latitude:', latitude);
-            console.log('Longitude:', longitude);
             return {
                 lat: latitude,
                 lon: longitude
@@ -429,13 +419,11 @@ async function receive(){
 
     try {
         const LL = await getLL(input);
-        console.log("LL is ", LL);
         var latitude = LL.lat;
         var longitude = LL.lon;
         const apiUrl = "http://api.openweathermap.org/data/2.5/forecast?lat="+latitude+"&lon="+longitude+"&appid="+API_KEY;
     
         fetch(apiUrl).then(response => { 
-            console.log(response); 
             if(!response.ok){
                 alert("Error: API response was not 'ok'.");
                 return;
