@@ -20,7 +20,8 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
+env:
+    API_KEY_OPENWEATHER: ${{ secrets.API_KEY_OPENWEATHER }}
 jobs:
   # Single deploy job since we're just deploying
   deploy:
@@ -41,5 +42,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        env:
-          API_KEY_OPENWEATHER: ${{secrets.API_KEY_OPENWEATHER}}
