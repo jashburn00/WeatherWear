@@ -384,7 +384,7 @@ function getLL(input){
         return 0;
     }
 
-    const apiUrl = "htpps://api.openweathermap.org/geo/1.0/zip?zip="+input+",US&appid="+API_KEY;
+    const apiUrl = "https://api.openweathermap.org/geo/1.0/zip?zip="+input+",US&appid="+API_KEY;
     {/*return example:
     {
         "zip": "90210",
@@ -421,7 +421,7 @@ async function receive(){
         const LL = await getLL(input);
         var latitude = LL.lat;
         var longitude = LL.lon;
-        const apiUrl = "htpps://api.openweathermap.org/data/2.5/forecast?lat="+latitude+"&lon="+longitude+"&appid="+API_KEY;
+        const apiUrl = "https://api.openweathermap.org/data/2.5/forecast?lat="+latitude+"&lon="+longitude+"&appid="+API_KEY;
     
         fetch(apiUrl).then(response => { 
             if(!response.ok){
