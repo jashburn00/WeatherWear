@@ -265,10 +265,10 @@ function getWinners(){
 function assignWind(){
     if( windSpeed < 1){
         headwearUpdate = headwearUpdate + "It's not windy, so headwear and accessories won't be bothered. ";
-    } else if(windSpeed < 7){
+    } else if(windSpeed < 10){
         headwearUpdate = headwearUpdate + "There's some light wind out there, and a hat or accesory might be affected by it. ";
         weights.hat-=0.5;
-    }else if(windSpeed < 15){
+    }else if(windSpeed < 20){
         headwearUpdate = headwearUpdate + "There's some notable wind, so a wearing hat or accesory might be cumbersome. ";
         weights.hat-=1.3;
     }else{
