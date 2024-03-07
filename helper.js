@@ -161,7 +161,10 @@ function assignTemp(){
 function assignWeather(){
     switch (weather){
         case "clear":
-            headwearUpdate = headwearUpdate+"It's looking like "+weatherMain+". You might want to bring some sunglasses. ";
+            headwearUpdate = headwearUpdate+"It's looking like "+weatherMain+". ";
+            if(SunIsUp){
+                headwearUpdate = headwearUpdate += "You might want to bring some sunglasses. ";
+            }
             weights.sunglasses += 1;
             break;
         case "thunderstorm":
@@ -194,7 +197,9 @@ function assignWeather(){
 function assignDaylight(){
     if(!SunIsUp){
         weights.sunglasses -= 10;
-        headwearUpdate = headwearUpdate + "The sun isn't up right now, so you don't need sunglasses. ";
+        if(weatherMain == "clear"){
+            headwearUpdate = headwearUpdate + "The sun isn't up right now, so you don't need sunglasses. ";
+        }
     }
 }
 
