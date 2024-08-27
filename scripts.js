@@ -178,7 +178,7 @@ async function updatePage(){
             imgElt.src = 'images/shoesTransparent.png';
             imgElt.alt = 'An image of a shoe';
             divPlaceholder.appendChild(imgElt);
-            lowerBodyUpdate = lowerBodyUpdate + "Shoes and sandals were closely weighted. Pick your favorite! ";
+            shoesUpdate = shoesUpdate + "Shoes and sandals were closely weighted. Pick your favorite! ";
             break;
     }
 
