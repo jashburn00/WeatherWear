@@ -82,7 +82,7 @@ async function updatePage(){
             divPlaceholder = document.getElementById("headwarePhotoContainer");
             divPlaceholder.removeChild(document.getElementById("headwareImg"));
             imgElt = document.createElement('img');
-            imgElt.src = 'images/simleyface.png';
+            imgElt.src = 'images/smileyface.png';
             imgElt.alt = 'An image of a smiley face';
             divPlaceholder.appendChild(imgElt);
             headwearUpdate = headwearUpdate + "Hats, beanies, and sunglasses are evenly weighted. Pick your favorite! ";
